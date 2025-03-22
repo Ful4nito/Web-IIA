@@ -1,4 +1,5 @@
 ---
+import Navigation from "../components/Navigation.astro";
 import Layout from "../layouts/Layout.astro";
 
 const pageTitle = "Sobre mi";
@@ -31,19 +32,13 @@ const skillcolor = "navy";
       }
     </style>
   </head>
+  <Navigation />
   <body>
-    <a href="/">Inicio</a>
-    <a href="../">Atras</a>
     <h1>Acerca de la pagina</h1>
 
     <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
 
     <p>Este sitio se irá actualizando a medida que vaya completando más partes del tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!</p>
 
-    <p>Mis habilidades son:</p>
-    <ul>
-      {skills.map((skill) => <li class="skill">{skill}</li> )}
-    </ul>
-  
   </body>
 </Layout>
