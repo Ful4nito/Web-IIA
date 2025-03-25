@@ -374,6 +374,7 @@ int main(void) {
 ## Practica 6
 
 ``` c
+
 // Baez Pacheco Jonathan Leon
 
 # include <stdio.h>
@@ -391,6 +392,7 @@ int menu = 1;
 int opcion = 0;
 int dato = 0;
 int renglon = 0;
+int divisor = 3;
 
 int main(void) {
   inicial = NULL;
@@ -398,17 +400,18 @@ int main(void) {
   actual = NULL;
   aux = NULL;
 
+  printf("\n  Lista de alumnos simplemente ligada\n");
+  printf("  |  1 Agragar nodo al inicio       |\n");
+  printf("  |  2 Agregar nodo al final        |\n");
+  printf("  |  3 Agregar nodo ordenadamente   |\n");
+  printf("  |  4 Mostrar todos los nodos      |\n");
+  printf("  |  5 Buscar nodo por valor        |\n");
+  printf("  |  6 Eliminar nodo por condicion  |\n");
+  printf("  |  7 SALIR                        |\n");
+  printf("  ===================================\n");
+  
   while(menu == 1) {
-    printf("\n  Lista de alumnos simplemente ligada\n");
-    printf("  |  1 Agragar nodo al inicio       |\n");
-    printf("  |  2 Agregar nodo al final        |\n");
-    printf("  |  3 Agregar nodo por condicion   |\n");
-    printf("  |  4 Mostrar todos los nodos      |\n");
-    printf("  |  5 Buscar nodo por valor        |\n");
-    printf("  |  6 Eliminar nodo por condicion  |\n");
-    printf("  |  7 SALIR                        |\n");
-    printf("  ===================================\n");
-    printf("  Elige una operacion >>> ");
+    printf("\n  Elige una operacion >>> ");
     scanf("%i", &opcion);
 
     switch(opcion) {
@@ -460,7 +463,7 @@ int main(void) {
         break;
 
 /* ------------------------------------------------------------------------------------- */        
-      case 3: //                           <===  Agregar nodo dada una condicion      3       
+      case 3: //                           <===  Agregar nodo ordenadamente      3       
         aux = new nodo;
 
         if (aux == NULL) {
@@ -564,21 +567,29 @@ int main(void) {
           break;
         }
 
-        printf("\n  Inserte valor a eliminar: ");
-        scanf("%i", &dato);
-
-        aux = inicial;
         actual = inicial;
-        while ((dato != aux->valor) && (aux->sig != NULL)) {
-          aux = aux->sig;
+        if ((inicial->valor%divisor) == 0) {
+          inicial = inicial->sig;
+          delete(actual);
         }
 
-        if (dato != aux->valor) {
-          printf("  No se encontro el valor %i\n", dato);
-          break;
+        anterior = inicial;
+        actual = inicial->sig;
+        while (actual->sig != NULL) {
+          if ((actual->valor%divisor) == 0) {
+            anterior->sig = actual->sig;
+            actual = actual->sig;
+            delete(actual);
+          }
+          else {
+            anterior = actual;
+            actual = actual->sig;
+          }
         }
-        else {
-          printf("  La ubicacion del nodo es %p\n", aux);
+
+        if ((actual->valor%divisor) == 0) {
+          anterior->sig = NULL;
+          delete(actual);
         }
         break;
 
