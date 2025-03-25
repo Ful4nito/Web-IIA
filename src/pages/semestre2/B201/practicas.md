@@ -372,6 +372,7 @@ int main(void) {
 ```
 
 ## Practica 6
+__Tonas__
 
 ``` c
 
