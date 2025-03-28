@@ -1,59 +1,82 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <Navigation />
+  <Header />
   <body>
-    <h1>Mapa Curricular</h1>
-    <h2>
-      Primer Semestre
-      <ul>
-      <li><a href="/semestre1/B101/fundamentos-de-programacion">Fundamentos de Programacion</a></li>
-        <li><a href="/semestre1/B102/matematicas-discretas">Matematicas Discretas</a></li>
-        <li><a href="/semestre1/B103/comunicacion-oral-y-escrita">Comunicacion Oral y Escrita</a></li>
-        <li><a href="/semestre1/B104/calculo">Calculo</a></li>
-        <li><a href="/semestre1/B105/mecanica-y-electromagnetismo">Mecanica y Electromagnetismo</a></li>
-        <li><a href="/semestre1/B106/fundamentos-esonomicos">Fundamentos Economicos</a></li>
-      </ul>
-    </h2>
-    <h2>Segundo Semestre
-      <ul>
-        <li><a href="/semestre2/B201/algoritmos-y-estructuras-de-datos">Algoritmos y Estructuras de Datos</a></li>
-        <li><a href="/semestre2/B202/algebra-lineal">Algebra Lineal</a></li>
-        <li><a href="/semestre2/B203/fundamentos-de-diseño-digital">Diseño de Sistemas Digitales</a></li>
-        <li><a href="/semestre2/B204/calculo-multivariable">Calculo Multivariable</a></li>
-        <li><a href="/semestre2/B205/ingenieria-etica-y-sociedad">Ingenieria, Etica y Sociedad</a></li>
-        <li><a href="/semestre2/B206/finanzas-empresariales">Finanzas Empresariales</a></li>
-      <ul/>
-    </h2>
-    <h2>
-      Tercer Semestre
-      <ul>
-      <li><a href="/semestre3/B301/analisis-y-diseño-de-algoritmos">Analisis y Diseño de Algoritmos</a></li>
-        <li><a href="/semestre3/B302/paradigmas-de-programacion">Paradigmas de Programacion</a></li>
-        <li><a href="/semestre3/B303/ecuaciones-diferenciales">Ecuaciones Diferenciales</a></li>
-        <li><a href="/semestre3/B304/bases-de-datos">Bases de Datos</a></li>
-        <li><a href="/semestre3/B305/diseño-de-sistemas-digitales">Diseño de Sistemas Digitales</a></li>
-        <li><a href="/semestre3/B306/liderazgo-personal">Liderazgo Personal</a></li>
-      </ul>
-    </h2> 
-    <h2>Cuarto Semestre
-      <ul></ul>
-    </h2> 
-    <h2>Quinto Semestre
-      <ul></ul>
-    </h2> 
-    <h2>Sexto Semestre
-      <ul></ul>
-    </h2>    
-    <h2>Septimo Semestre
-      <ul></ul>
-    </h2> 
-    <h2>Octavo Semestre
-      <ul></ul>
-    </h2>    
+    <div class="hoja">
+      <div><h1>MAPA CURRICULAR</h1></div>
 
+      <div class="seccion">
+        <h2>Primer Semestre</h2>
+          <ul class="materias">
+          <li><a href="/semestre1/B101/fundamentos-de-programacion">Fundamentos de Programacion</a></li>
+            <li><a href="/semestre1/B102/matematicas-discretas">Matematicas Discretas</a></li>
+            <li><a href="/semestre1/B103/comunicacion-oral-y-escrita">Comunicacion Oral y Escrita</a></li>
+            <li><a href="/semestre1/B104/calculo">Calculo</a></li>
+            <li><a href="/semestre1/B105/mecanica-y-electromagnetismo">Mecanica y Electromagnetismo</a></li>
+            <li><a href="/semestre1/B106/fundamentos-esonomicos">Fundamentos Economicos</a></li>
+          </ul>
+      </div>
+        <br><br>
+
+      <div class="seccion">
+        <h2>Segundo Semestre</h2>
+          <ul class="materias">
+            <li><a href="/semestre2/B201/algoritmos-y-estructuras-de-datos">Algoritmos y Estructuras de Datos</a></li>
+            <li><a href="/semestre2/B202/algebra-lineal">Algebra Lineal</a></li>
+            <li><a href="/semestre2/B203/fundamentos-de-diseño-digital">Diseño de Sistemas Digitales</a></li>
+            <li><a href="/semestre2/B204/calculo-multivariable">Calculo Multivariable</a></li>
+            <li><a href="/semestre2/B205/ingenieria-etica-y-sociedad">Ingenieria, Etica y Sociedad</a></li>
+            <li><a href="/semestre2/B206/finanzas-empresariales">Finanzas Empresariales</a></li>
+          <ul/>
+      </div>
+        <br><br>
+
+      <div class="seccion">
+        <h2>Tercer Semestre</h2>
+          <ul class="materias">
+          <li><a href="/semestre3/B301/analisis-y-diseño-de-algoritmos">Analisis y Diseño de Algoritmos</a></li>
+            <li><a href="/semestre3/B302/paradigmas-de-programacion">Paradigmas de Programacion</a></li>
+            <li><a href="/semestre3/B303/ecuaciones-diferenciales">Ecuaciones Diferenciales</a></li>
+            <li><a href="/semestre3/B304/bases-de-datos">Bases de Datos</a></li>
+            <li><a href="/semestre3/B305/diseño-de-sistemas-digitales">Diseño de Sistemas Digitales</a></li>
+            <li><a href="/semestre3/B306/liderazgo-personal">Liderazgo Personal</a></li>
+          </ul>
+      </div>
+        <br><br>
+
+      <div class="seccion">
+        <h2>Cuarto Semestre</h2>
+          <ul class="materias"></ul>
+      </div>
+        <br><br>
+        
+      <div class="seccion">
+        <h2>Quinto Semestre</h2>
+          <ul class="materias"></ul>
+      </div>
+        <br><br>
+
+      <div class="seccion">
+        <h2>Sexto Semestre</h2>
+          <ul class="materias"></ul>
+      </div> 
+        <br><br>
+
+      <div class="seccion">
+        <h2>Septimo Semestre</h2>
+          <ul class="materias"></ul>
+      </div> 
+        <br><br>
+
+      <div class="seccion">
+        <h2>Octavo Semestre</h2>
+          <ul class="materias"></ul>
+      </div> 
+      <br><br> 
+    </div>    
   </body>
 </Layout>

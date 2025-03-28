@@ -1,6 +1,7 @@
 :root {
-  --t1-foreground: #a9b1d6;
-  --t1-background: #1a1b26;
+  --t1-foreground: #abc0e7b6;
+  --t1-navbackground: #1f2b30e3;
+  --t1-background: #080c0e;
   
   --t1-black: #28344a;
   --t1-gray: #414868;
@@ -8,73 +9,186 @@
   --t1-green: #73eaba;
   --t1-yellow: #e0af68;
   --t1-blue: #7aa2f7;
+  --t1-bluedark: #5381ff;
   --t1-magenta: #bb9af7;
   --t1-cyan: #7dcfff;
-  --t1-white: #c0caf5;
+  --t1-white: #DEE8ED;
 }
 
 html {
     background-color: var(--t1-background);
     color: var(--t1-foreground);
     font-family: monospace;
-  }
+}
   
-  body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 90ch;
-    padding: 1rem;
-    line-height: 1.5;
-  }
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 75%;
+  padding: 1rem;
+  line-height: 1.5;
+}
   
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+Header {
+  background-color: var(--t1-navbackground);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px;
+  border-bottom: 5px solid var(--t1-bluedark);
+  border-radius: 5px;
+}
   
-  h1 {
-    /*color: #4b27ca;*/
-    margin: 1rem 0;
-    font-size: 3rem;
+h1 {
+  /*color: #4b27ca;*/
+  margin: 2rem;
+  font-size: 3rem;
+  color: var(--t1-yellow);
+}
+
+h2 {
+  margin-top: .4rem;
+  margin-bottom: .5rem;
+  font-size: 2.5rem;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+  font-size: 1.7rem;
+  list-style-type: none;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #6890ff;
+}
+
+  /* estilos de la barra de navegación*/
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #7aa2f7;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6f788ae3;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  /*background-color: #7aa2f7;*/
+  color: #d0dcffcb;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 0em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
   }
 
-  h2 {
-    font-size: 2.5rem;
+  .nav-links a {
+    display: inline-block;
+    padding: 1px 20px;
+    border-radius: 3px;
   }
 
-  ul {
-    font-size: 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.materias p {
+  line-height: 1.4;
+  }
+
+.materias a {
+  outline: none;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1px 8px 0;
   }
   
-  p {
-    line-height: 1.4;
+.materias a:link { /*Color de enlace no visitado*/
+  color: var(--t1-foreground);
   }
   
-  a {
-    outline: none;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 1px 8px 0;
+.materias a:visited {/*Color de enlace visitado*/
+  color: var(--t1-foreground);
   }
   
-  a:link { /*Color de enlace no visitado*/
-    color: var(--t1-foreground);
+.materias a:focus {/*Colores que se quedan al arrastrar el enlace*/
+  /*border-bottom: 1px solid;*/
+  background: var(--t1-background);
   }
   
-  a:visited {  /*Color de enlace visitado*/
-    color: var(--t1-foreground);
+.materias a:hover {/*Colores al colocar el cursor encima del enlace*/
+  background: var(--t1-blue);
+  color: var(--t1-black);
   }
   
-  a:focus {  /*Colores que se quedan al arrastrar el enlace*/
-    /*border-bottom: 1px solid;*/
-    background: var(--t1-background);
+.materias a:active { /*Colores la hacer click en el enlace  */
+  background: var(--t1-black);
+  color: var(--t1-blue);
   }
-  
-  a:hover {  /*Colores al colocar el cursor encima del enlace*/
-    background: var(--t1-blue);
-    color: var(--t1-black);
-  }
-  
-  a:active {  /*Colores la hacer click en el enlace*/
-    background: var(--t1-black);
-    color: var(--t1-blue);
-  }
+
+.hoja {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  border: 1px solid var(--t1-foreground);
+}
+
+.libreta {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  border: 1px solid var(--t1-foreground);
+}
+
+.libreta h2{
+  color: var(--t1-green);
+  margin: 2rem;
+}
+
+.seccion {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-top: 3px solid var(--t1-gray);
+}
