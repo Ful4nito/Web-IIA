@@ -22,8 +22,9 @@ html {
     background-color: var(--t1-background);
     color: var(--t1-foreground);
     font-family: monospace;
+    overflow-y: scroll;
 }
-  
+
 body {
   margin: 0 auto;
   width: 100%;
