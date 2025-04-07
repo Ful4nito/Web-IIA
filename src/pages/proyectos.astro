@@ -1,45 +1,38 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
-import Footer from "../components/Footer.astro";
+
 ---
 
 <Layout>
-    <Header />
-    <body>
-        <div class="hoja">
-            <h1>Proyectos desarrollados durante la carrera</h1>
-            
-            <div class="seccion">
-                <h2>Brazo Robotico 6GDL</h2>
-                <p>El presente proyecto abarca el diseño, desarrollo y construcción de tres sistemas robóticos con aplicaciones diversas 
-                en el ámbito de la robótica moderna. El primero es un robot tipo brazo robótico de 6 grados de libertad (6GDL), 
-                diseñado para realizar tareas de manipulación precisa, ideal para aplicaciones educativas, industriales o de investigación.</p>
-            </div>
-            <br>
-
-            <div class="seccion">
-                <h2>Robot de pelea 3lb</h2>
-                <p>El segundo es un robot de pelea de 3 libras, optimizado para competencias de combate, 
-                donde se pone a prueba la resistencia mecánica, la estrategia de diseño y el control remoto eficiente.</p>
-            </div>
-            <br>
-
-            <div class="seccion">
-                <h2>Robot Sumo Autonomo</h2>
-                <p>Por último, se presenta un robot sumo autónomo, capaz de detectar y enfrentar a su oponente de manera independiente
-                dentro de un área de combate, demostrando el uso de sensores, lógica de control y toma de decisiones. 
-                Estos tres proyectos permiten explorar diferentes ramas de la robótica como la mecatrónica, el control, 
-                la programación y el diseño mecánico.</p>
-            </div>
-            <br>
-
-            <div class="seccion">
-                <h2>Desarrollo Web</h2>
-            </div>
-            <br>
-
-            <Footer />
+  <Header />
+  <title>About</title>
+  <body>
+    <div class="hoja">
+        <h1>Brazo</h1>
+        <div class="seccion">
+            <h2>Informacion</h2>
+            <p>El presente proyecto abarca el diseño, desarrollo y construcción de tres sistemas robóticos con
+               aplicaciones diversas en el ámbito de la robótica moderna. El primero es un robot tipo brazo robótico
+               de 6 grados de libertad (6GDL), diseñado para realizar tareas de manipulación precisa, ideal para
+               aplicaciones educativas, industriales o de investigación. </p>
         </div>
-    </body>
+        <br>
+        <!-- Hola -->
+        <div class="seccion">
+            <h2>Robot 3lb</h2>
+            <p>El segundo es un robot de pelea de 3 libras, optimizado para competencias de combate, donde se pone
+                a prueba la resistencia mecánica, la estrategia de diseño y el control remoto eficiente.</p>
+        </div>
+        <br>
+        <div class="seccion">
+            <h2>Sumo</h2>
+            <p>Por último, se presenta un robot sumo autónomo, capaz de detectar y enfrentar a su oponente de
+                manera independiente dentro de un área de combate, demostrando el uso de sensores, lógica de control
+                y toma de decisiones. Estos tres proyectos permiten explorar diferentes ramas de la robótica como
+                la mecatrónica, el control, la programación y el diseño mecánico. </p>
+        </div>
+        <br>
+    </div>
+  </body>
 </Layout>

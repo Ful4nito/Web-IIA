@@ -1,11 +1,11 @@
 ---
-import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <Header />
+  <title>Semestres</title>
   <body>
     <div class="hoja"> <!-- HOJA --> 
       <h1>Mapa Curricular</h1>
@@ -15,7 +15,7 @@ import Layout from "../layouts/Layout.astro";
         <div class="contenedor-grande">  <!-- CONTENEDOR GRANDE DISPLAY FLEX -->
           <div class="semestre"> <!-- Primero -->
             <h2>PRIMER SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="/semestre1/B101/fundamentos-de-programacion">FUNDAMENTOS DE PROGRAMACIÓN</a></li>
               <li><a href="/semestre1/B102/matematicas-discretas">MATEMATICAS DISCRETAS</a></li>
               <li><a href="/semestre1/B103/comunicacion-oral-y-escrita">COMUNICACIÓN ORAL Y ESCRITA</a></li>
@@ -27,7 +27,7 @@ import Layout from "../layouts/Layout.astro";
 
           <div class="semestre">  <!-- Segundo -->
             <h2>SEGUNDO SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="/semestre2/B201/algoritmos-y-estructuras-de-datos">ALGORITMOS Y ESTRUCTURAS DE DATOS</a></li>
               <li><a href="/semestre2/B202/algebra-lineal">ALGEBRA LINEAL</a></li>
               <li><a href="/semestre2/B203/fundamentos-de-diseño-digital">FUNDAMENTOS DE DISEÑO DIGITAL</a></li>
@@ -39,7 +39,7 @@ import Layout from "../layouts/Layout.astro";
 
           <div class="semestre">  <!-- Tercero -->
             <h2>TERCER SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="/semestre3/B301/analisis-y-diseño-de-algoritmos">ANÁLISIS Y DISEÑO DE ALGORITMOS</a></li>
               <li><a href="/semestre3/B302/paradigmas-de-programacion">PARADIGMAS DE PROGRAMACIÓN</a></li>
               <li><a href="/semestre3/B303/ecuaciones-diferenciales">ECUACIONES DIFERENCIALES</a></li>
@@ -51,7 +51,7 @@ import Layout from "../layouts/Layout.astro";
 
           <div class="semestre">  <!-- Cuarto -->
             <h2>CUARTO SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="#">FUNDAMENTOS DE INTELIGENCIA ARTIFICIAL</a></li>
               <li><a href="#">PROBABILIDAD Y ESTADÍSTICA</a></li>
               <li><a href="#">MATEMÁTICAS AVANZADAS PARA LA INGENIERÍA</a></li>
@@ -63,7 +63,7 @@ import Layout from "../layouts/Layout.astro";
             
           <div class="semestre">  <!-- Quinto -->
             <h2>QUINTO SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="#">APRENDIZAJE DE MÁQUINA</a></li>
               <li><a href="#">VISIÓN ARTIFICIAL</a></li>
               <li><a href="#">TEORÍA DE LA COMPUTACIÓN</a></li>
@@ -75,7 +75,7 @@ import Layout from "../layouts/Layout.astro";
 
           <div class="semestre">  <!-- Sexto -->
             <h2>SEXTO SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="#">CÓMPUTO PARALELO</a></li>
               <li><a href="#">REDES NEURONALES Y APRENDIZAJE PROFUNDO</a></li>
               <li><a href="#">INGENIERÍA DE SOFTWARE PARA SISTEMAS INTELIGENTES</a></li>
@@ -87,7 +87,7 @@ import Layout from "../layouts/Layout.astro";
 
           <div class="semestre">  <!-- Septimo -->
             <h2>SEPTIMO SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="#">TRABAJO TERMINAL I</a></li>
               <li><a href="#">RECONOCIMIENTO DE VOZ</a></li>
               <li><a href="#">FORMULACIÓN Y EVALUACIÓN DE PROYECTOS INFORMÁTICOS</a></li>
@@ -98,7 +98,7 @@ import Layout from "../layouts/Layout.astro";
 
           <div class="semestre">  <!-- Octavo -->
             <h2>OCTAVO SEMESTRE</h2>
-            <ul class="lista-1">
+            <ul class="lista-secundaria">
               <li><a href="#">TRABAJO TERMINAL II</a></li>
               <li><a href="#">GESTIÓN EMPRESARIAL</a></li>
               <li><a href="#">ESTANCIA PROFESIONAL</a></li>
@@ -110,7 +110,6 @@ import Layout from "../layouts/Layout.astro";
       <br>
 <!-- Seccion 2 -->
 
-      <Footer />
     </div>   <!-- HOJA --> 
   </body>
 </Layout>
