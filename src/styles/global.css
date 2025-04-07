@@ -1,23 +1,31 @@
 :root {
-  --t1-foreground: #a8bde4d2;
-  --t1-navbackground: #12151bd7;
-  --t1-background: #12191ff5;
-  --t1-unfocus: #6f788ae3;
+  --t1-foreground:        #a8bde4d2;
+  --t1-background:        #12191ff5;
+  --t1-unfocus:           #6f788ae3;
+
+  --t1-navbackground:     #12151bd7;
+  --t1-navforeground:     #444a64;
+  --t1-navborder:         #353b58;
   
-  --t1-black: #080b0f;
-  --t1-gray: #444a64;
-  --t1-red: #ff3568;
-  --t1-green: #73eaba;
-  --t1-greendark: #00ee8f;
-  --t1-yellow: #e0af68;
-  --t1-blue: #85acff;
-  --t1-bluedark: #0084ff;
-  --t1-magenta: #bb9af7;
-  --t1-purple: #7e21e9;
-  --t1-cyan: #72cdf1;
-  --t1-white: #c4cdd1ea;
+  --t1-black:             #080b0f;
+  --t1-gray:              #444a64;
+  --t1-graydark:          #13151f;
+  --t1-red:               #ff3568;
+  --t1-green:             #73eaba;
+  --t1-greendark:         #00ee8f;
+  --t1-yellow:            #e0af68;
+  --t1-blue:              #85acff;
+  --t1-bluedark:          #0084ff;
+  --t1-magenta:           #bb9af7;
+  --t1-purple:            #7e21e9;
+  --t1-cyan:              #72cdf1;
+  --t1-white:             #c4cdd1ea;
 }
 
+
+/*==========================================================*/ 
+/*                       MAIN LAYOUTS                       */
+/*==========================================================*/
 html {
     background-color: var(--t1-background);
     color: var(--t1-foreground);
@@ -46,7 +54,6 @@ body {
 }
 
 Header {
-  background-color: var(--t1-navbackground);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,57 +61,100 @@ Header {
   padding: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  border-bottom: 3px solid var(--t1-greendark);
+  background-color: var(--t1-navbackground);
+  border-bottom: 2px solid var(--t1-navborder);
 }
 
 footer {
   display: flex;
   gap: 1rem;
+
   padding: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  border: 3px solid var(--t1-gray);
+
   border-radius: 4px;
+  border: 3px solid var(--t1-gray);
 }
-  
+
+p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  text-align: justify;
+
+  /*border: 1px solid var(--t1-black);*/
+}
+
+ul {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  margin-bottom: .7rem;
+
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+
+
+
+
+/*==========================================================*/ 
+/*                         HEADERS                          */
+/*============================ =============================*/
 h1 {
-  /*color: #4b27ca;*/
-  margin: 1rem;
+  padding: 1rem;
+  
   font-size: 3rem;
   color: var(--t1-foreground);
   /*border: 1px solid var(--t1-black);*/
 }
 
 h2 {
-  margin: 1rem;
+  padding-left: 1rem;  
+
   font-size: 2.5rem;
-  color: var(--t1-greendark);
+  color: var(--t1-bluedark);
   /*border: 1px solid var(--t1-black);*/
 }
 
 h3 {
-  margin-left: 1%;
-  margin-right: 1%;
+  padding-left: 1rem;
+
   font-size: 2rem;
-  /*border: 1px solid var(--t1-black);*/
   color: var(--t1-blue);
+  /*border: 1px solid var(--t1-black);*/
 }
 
 h4 {
-  margin-left: 1%;
-  margin-right: 1%;
-  font-size: 1.5rem;
+  margin-left: 1rem;
+
+  font-size: 1.8rem;
+  color: var(--t1-blue);
   /*border: 1px solid var(--t1-black);*/
 }
 
-ul {
-  margin-bottom: 0.5rem;
-  margin-left: 2rem;
+h5 {
+  padding-left: 1rem;
+
   font-size: 1.5rem;
-  list-style-type: none;
+  color: var(--t1-red);
+  /*border: 1px solid var(--t1-black);*/
 }
 
-  /* estilos de la barra de navegación*/
+h6 {
+  padding-left: 1rem;
+
+  font-size: 1..2rem;
+  /*border: 1px solid var(--t1-black);*/
+}
+
+
+
+
+
+/*==========================================================*/ 
+/*                      NAVIGATION BAR                      */
+/*============================ =============================*/
 .nav-links {
   width: 100%;
   top: 5em;
@@ -122,14 +172,18 @@ ul {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--t1-unfocus);
+  color: var(--t1-navforeground);
   /*border: 1px solid var(--t1-black);*/
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-  /*background-color: #7aa2f7;*/
-  color: var(--t1-white);
+.nav-links a:link,
+.nav-links a:visited { /*Color de enlace no visitado y visitado*/
+  color: var(--t1-gray);
+  }
+
+.nav-links a:hover,  /*Color al colocar el cursor encima*/
+.nav-links a:focus { /*Color al arrastrar el enlace*/
+  color: var(--t1-foreground);
 }
 
 .logo {
@@ -139,13 +193,11 @@ ul {
   color: #1f262e;
   font-weight: bold;
   font-size: 2rem;
-  /*border: 1px solid var(--t1-foreground);*/
 }
 
 .navspace {
   width: 20px;
   height: auto;
-  /*border: 1px solid var(--t1-black);*/
   flex-grow: 1;
   margin: 10px;
 }
@@ -154,6 +206,82 @@ ul {
   display: unset;
 }
 
+
+
+
+
+/*==========================================================*/ 
+/*                          LINKS                           */
+/*==========================================================*/
+a {
+  display: flex;
+  outline: none;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1px 8px 0;
+  }
+  
+a:link,
+a:visited { /*Color de enlace no visitado y visitado*/
+  color: var(--t1-foreground);
+  }
+  
+a:hover { /*Colores al colocar el cursor encima*/
+  color: var(--t1-foreground);
+  background: var(--t1-background);
+  }
+
+a:focus {/*Colores al hacer click en el enlace*/
+  color: var(--t1-blue);
+  background: var(--t1-background);
+  }
+
+
+
+
+/*==========================================================*/ 
+/*                        CONTAINERS                        */
+/*==========================================================*/
+.seccion{
+  border-top: 3px solid var(--t1-gray);
+}
+
+.semestre{
+  margin: 1rem;
+  padding: 1rem;
+  
+  flex-grow: 1;
+  /*flex-basis: 45%;*/
+
+  border-radius: 6px;
+  border: 3px solid var(--t1-gray);
+}
+
+.contenedor-grande{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.contenedor-mediano{
+  margin: 1rem;
+  padding-top: .5rem; /* OJO AQUI ESTO ROMPE  !!!!!!!!!!!*/
+  
+  flex-grow: 1;
+  flex-basis: 20%;
+
+  border-radius: 6px;
+  border: 1px solid var(--t1-gray);
+
+}
+
+
+
+
+
+/*==========================================================*/ 
+/*                  HAMBURGUER Y NAV BAR                    */
+/*==========================================================*/
 @media screen and (min-width: 980px) {
   .nav-links {
     margin-left: 0em;
@@ -170,84 +298,10 @@ ul {
 
 }
 
-.materias a {
-  outline: none;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 1px 8px 0;
-  }
-  
-.materias a:link { /*Color de enlace no visitado*/
-  color: var(--t1-foreground);
-  }
-  
-.materias a:visited {/*Color de enlace visitado*/
-  color: var(--t1-foreground);
-  }
-  
-.materias a:focus {/*Colores que se quedan al arrastrar el enlace*/
-  /*border-bottom: 1px solid;*/
-  background: var(--t1-background);
-  }
-  
-.materias a:active {/*Colores al colocar el cursor encima del enlace*/
-  background: var(--t1-blue);
-  color: var(--t1-black);
-  }
-  
-.materias a:hover { /*Colores la hacer click en el enlace  */
-  background: var(--t1-black);
-  color: var(--t1-blue);
-  }
-
-.seccion{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: .5rem;
-  border-top: 3px solid var(--t1-gray);
-
-  p {
-    margin-left: 1rem;
-  }
-
-}
-
-.semestre{
-  margin: 1rem;
-  border: 3px solid var(--t1-gray);
-  border-radius: 6px;
-  padding: .5%;
-  
-  flex-grow: 1;
-  /*flex-basis: 45%;*/
-}
-
-.unidad{
-  margin: 1rem;
-  border: 1px solid var(--t1-gray);
-  border-radius: 6px;
-  padding: .5%;
-  
-  flex-grow: 1;
-  flex-basis: 20%;
-}
-
-.contenedor1 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-
 /* ======== MENOR A 851 PIXELES*/
 @media screen and (max-width: 850px) {
-  body {
-    margin: 0 auto;
-    width: 100%;
-    line-height: 1.5;
-  }
 
-  .contenedor1 {
+  .contenedor-grande {
     display: flex;
     flex-flow: column wrap;
   }
@@ -256,8 +310,6 @@ ul {
     width: auto;
   }
 
-  .unidad{
-    width: auto;
-  }
+
 }
 

@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -11,17 +12,35 @@ import Layout from "../layouts/Layout.astro";
             
             <div class="seccion">
                 <h2>Documentacion</h2>
-                <ul class="materias">
-                    <li><a href="/posts/post-1/">Publicación 1</a></li>
-                    <li><a href="/posts/post-2/">Publicación 2</a></li>
-                    <li><a href="/posts/post-3/">Publicación 3</a></li>
-                </ul>
+                    <ul class="lista-1">
+                        <li><a href="/posts/post-1/">Publicación 1</a></li>
+                        <li><a href="/posts/post-2/">Publicación 2</a></li>
+                        <li><a href="/posts/post-3/">Publicación 3</a></li>
+                    </ul>
             </div>
             <br>
+
             <div class="seccion">
-				<h2>Investigaciones
-			</div>
+                <div>
+                    <h2>Temas</h2>
+                    <p>Accedé a artículos y temas de interés sobre robótica, automatización, 
+                        diseño mecánico, control y tecnología. Aquí compartimos ideas, proyectos, 
+                        análisis y soluciones a desafíos comunes del mundo maker e industrial.</p>
+                </div>
+            </div>
             <br>
+
+            <div class="seccion">
+                <div class="lista-1">
+                    <h2>Configuraciones</h2>
+                    <ul class="materias">
+                        <li><a href="/posts/setup-c/">Setup para programar en C</a></li>
+                    </ul>
+			    </div>
+            </div>
+            <br>
+
+            <Footer>
         </div>
     </body>
 </Layout>

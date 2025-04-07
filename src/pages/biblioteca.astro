@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -7,19 +8,55 @@ import Layout from "../layouts/Layout.astro";
     <Header />
     <body>
         <div class="hoja">
-            <h1>Coleccion de recursos digitales</h1>
+            <h1>Recursos digitales</h1>
             <div class="seccion">
                 <h2>Libros</h2>
+                <p>Explorá la colección de libros, donde encontrarás recursos técnicos, guías prácticas y material especializado en robótica, 
+                electrónica, programación y más. Perfectos para estudiantes, entusiastas y profesionales que buscan profundizar en sus conocimientos.</p>
+                
+                <div class="contenedor-grande">
+                    <div class="contenedor-mediano">
+                        <h3>Matematicas</h3>
+                        <ul class="lista-1">
+                            <li><a href="#">Libro 01</a></li>
+                            <li><a href="#">Libro 02</a></li>
+                            <li><a href="#">Libro 03</a></li>
+                            <li><a href="#">Libro 04</a></li>
+                            <li><a href="#">Libro 05</a></li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-mediano">
+                        <h3>Programacion</h3>
+                        <ul class="lista-1">
+                            <li><a href="#">Libro 07</a></li>
+                            <li><a href="#">Libro 08</a></li>
+                            <li><a href="#">Libro 09</a></li>
+                            <li><a href="#">Libro 10</a></li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-mediano">
+                        <h3>Electronica</h3>
+                        <ul class="lista-1">
+                            <li><a href="#">Libro 11</a></li>
+                            <li><a href="#">Libro 12</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
             <br>
+
             <div class="seccion">
                 <h2>Manuales</h2>
             </div>
             <br>
+
             <div class="seccion">
                 <h2>Ejercicios</h2>
             </div>
             <br>
+
+            <Footer>
         </div>
     </body>
 </Layout>
