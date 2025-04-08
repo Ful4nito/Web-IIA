@@ -46,8 +46,8 @@ body {
 }
 
 .hoja {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-bottom: 3rem;
   /*border: 1px groove var(--t1-black);*/
 }
@@ -81,7 +81,7 @@ p {
 }
 
 ul {
-  margin-bottom: .7rem;
+  margin-bottom: .5rem;
 
   font-size: 1.5rem;
   list-style-type: none;
@@ -197,7 +197,6 @@ h6 {
 /*                          LINKS                           */
 /*==========================================================*/
 .lista-secundaria a {
-  display: flex;
   padding-left: 2% ;
   padding-right: 2% ;
 
@@ -242,6 +241,10 @@ h6 {
   border-radius: 6px;
   border: 3px solid var(--t1-gray);
 
+  .lista-secundaria a {
+    display: flex;
+    }
+
 }
 
 .contenedor-grande{
@@ -257,6 +260,10 @@ h6 {
 
   border-radius: 6px;
   /*border: 1px solid var(--t1-gray);*/
+
+  .lista-secundaria a {
+    display: flex;
+    }
 }
 
 

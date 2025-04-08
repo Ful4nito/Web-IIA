@@ -1,12 +1,38 @@
 ---
+import Header from "../../../components/Header.astro"
 import Layout from "../../../layouts/Layout.astro"
 ---
 
 <Layout>
-    <a href="/mapa/">Mapa</a>
+    <Header />
     <body>
-        <h1>Apuntes de Finanzas Empresariales</h1>
-        <h2>Unidad I</h2>
-        <h2>Unidad II</h2>
+        <div class="hoja">
+            <h1>Finanzas Empresariales</h1>
+            <div class="seccion">
+                <h2>UNIDAD I</h2>
+                <b>La empresa y su contexto</b>
+            </div>
+            <br>
+            <div class="seccion">
+                <h2>UNIDAD II</h2>
+                <b>Importancia y utilización de la información financiera</b>
+            </div>
+            <br>
+            <div class="seccion">
+                <h2>UNIDAD III</h2>
+                <b>Estados financieros proforma</b>
+            </div>
+            <br>
+            <div class="seccion">
+                <h2>UNIDAD IV</h2>
+                <b>Métodos de evaluación de proyectos de inversión</b>
+            </div>
+            <br>
+            <div class="seccion">
+                <h2>UNIDAD V</h2>
+                <b>Análisis financiero de dos empresas</b>
+            </div>
+            <br>
+        </div>    
     </body>
 </Layout>
