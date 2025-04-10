@@ -26,7 +26,7 @@ int main () {
 
   printf("\n  Lista de nodos doblemente enlazada");
   printf("\n  | 1 Agregar nodo al inicio       |");
-  printf("\n  | 2 Mostrar nodo al final        |");
+  printf("\n  | 2 Agregar nodo al final        |");
   printf("\n  | 3 Mostrar nodos                |");
   printf("\n  | 4 SALIR                        |");
   printf("\n  ==================================");
@@ -62,23 +62,25 @@ int main () {
     aux = new(NODO);
     if (aux == NULL) {
       printf("   No hay mas espacio en memoria.\n");
-      break;
-    }
-
-    printf("   Inserte valor: ");
-    scanf("%i", &aux->valor);
-    
-    if (inicial == NULL) {
-      inicial = aux;
-      aux->sig = NULL;
-      aux->ant = NULL;
     }
     else {
-      actual = inicial;
-      while (actual->sig != NULL) {
-        actual = actual->sig;
+      printf("   Inserte valor: ");
+      scanf("%i", &aux->valor);
+      
+      if (inicial == NULL) {
+        inicial = aux;
+        aux->sig = NULL;
+        aux->ant = NULL;
       }
-      actual->sig = aux;
+      else {
+        actual = inicial;
+        while (actual->sig != NULL) {
+          actual = actual->sig;
+        }
+        actual->sig = aux;
+        aux->ant = actual;
+        aux->sig = NULL;
+      }
     }
     break;
 
