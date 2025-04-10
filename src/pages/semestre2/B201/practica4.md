@@ -28,22 +28,24 @@ int main() {
   aux = NULL;
   actual = NULL;
   
+  printf("\n Lista simplemente ligada");
+  printf("\n |  1 Agregar nodo      |");
+  printf("\n |  2 Mostrar lista     |");
+  printf("\n |  3 Salir             |");
+  printf("\n ========================");
+
   while (menu == 1) {
-    printf("\n Lista simplemente ligada\n");
-    printf("   1 Agregar nodo\n");
-    printf("   2 Mostrar lista\n");
-    printf("   3 Salir\n");
-    printf("   Que opcion queres: ");
+    printf("\n Que opcion quieres >> ");
     scanf("%i", &opcion);
     
     switch (opcion) {
       case 1:
         aux = new nodo;
         if (aux == NULL) {
-          printf("  No hay mas espacio en la memoria.\n");
+          printf("\n No hay mas espacio en la memoria.");
           break;
         }
-        printf("   Inserte valor: ");
+        printf(" Inserte valor: ");
         scanf("%i", &aux->valor);
         aux->sig = NULL; 
 
@@ -59,7 +61,7 @@ int main() {
       case 2:
         aux = inicial;
         if (aux == NULL) {
-          printf("\n La lista esta vacia.\n");
+          printf("\n La lista esta vacia.");
           break;
         }
         

@@ -27,14 +27,16 @@ int main(void) {
   actual = NULL;
   aux = NULL;
 
+  printf("\n Lista de alumnos simplemente ligada");
+  printf("\n |  1 Insertar nodo al inicio      |");
+  printf("\n |  2 Insertar nodo al final       |");
+  printf("\n |  3 Mostrar todos los nodos      |");
+  printf("\n |  4 Buscar valor por boleta      |");
+  printf("\n |  5 Salir                        |");
+  printf("\n ===================================");
+  
   while(menu == 1) {
-    printf("\n Lista de alumnos simplemente ligada\n");
-    printf("    1 Insertar nodo al inicio\n");
-    printf("    2 Insertar nodo al final\n");
-    printf("    3 Mostrar todos los nodos\n");
-    printf("    4 Buscar valor por boleta\n");
-    printf("    5 Salir\n");
-    printf("    Elija una opcion: ");
+    printf("\n Elija una opcion >> ");
     scanf("%i", &opcion);
 
     switch(opcion) {
@@ -42,14 +44,14 @@ int main(void) {
         aux = new ALUMNO;
 
         if (aux == NULL) {
-          printf(" No hay mas espacio en memoria.\n");
+          printf("  No hay mas espacio en memoria.\n");
           break;
         }
-        printf("\n    Inserte boleta del alumno: ");
+        printf("  Inserte boleta del alumno: ");
         scanf("%i", &aux->boleta);
-        printf("    Inserte nombre del alumno: ");
+        printf("  Inserte nombre del alumno: ");
         scanf("%s", aux->nombre);
-        printf("    Inserte promedio del alumno: ");
+        printf("  Inserte promedio del alumno: ");
         scanf("%f", &aux->promedio);
         aux->sig = NULL;
 
@@ -69,11 +71,11 @@ int main(void) {
           printf(" No hay mas espacio en memoria.\n");
           break;
         }
-        printf("\n    Inserte boleta del alumno: ");
+        printf("  Inserte boleta del alumno: ");
         scanf("%i", &aux->boleta);
-        printf("    Inserte nombre del alumno: ");
+        printf("  Inserte nombre del alumno: ");
         scanf("%s", aux->nombre);
-        printf("    Inserte promedio del alumno: ");
+        printf("  Inserte promedio del alumno: ");
         scanf("%f", &aux->promedio);
         aux->sig = NULL;
 
@@ -103,17 +105,17 @@ int main(void) {
       
       case 4:
         if (inicial == NULL) {
-          printf(" La lista esta vacia\n");
+          printf("  La lista esta vacia\n");
           break;
         }
-        printf("\n Boleta que quiere buscar: ");
+        printf("  Boleta que quiere buscar: ");
         scanf("%i", &dato);
         aux = inicial;
         while ((dato != aux->boleta) && (aux->sig != NULL)) {
           aux = aux->sig;
         }
         if (dato != aux->boleta) {
-          printf("\n No se encontro el alumno.\n");
+          printf("\n  No se encontro el alumno.\n");
           break;
         }
         else {
