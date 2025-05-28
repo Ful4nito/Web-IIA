@@ -1,5 +1,8 @@
+# Posible Practica 8 [no asistencia]
 
-# Posible practica 8
+## Estructura Pila
+
+Instrucciones:
 
 ``` cpp
 // Baez Pacheco Jonathan Leon  

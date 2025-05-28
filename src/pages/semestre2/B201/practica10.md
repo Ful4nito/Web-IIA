@@ -1,5 +1,9 @@
 # Practica 10
-Ordenamiento por Seleccion
+
+## Ordenamiento por Seleccion
+
+Instrucciones:
+Desarrollar un programa que ordene por seleccion una lista estatica de numeros enteros, Solicitar al usuario cuantos numeros aleatorios desea generar, estos debene tomar valores entre 0 y 100, la cantidad de numeros aleatorios debe der de 1 a 100.
 
 ``` cpp
 // Baez Pacheco Jonathan Leon  

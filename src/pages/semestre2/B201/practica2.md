@@ -1,8 +1,9 @@
 # Practica 2
 
-Objeto con datos ingresados por el usuario  250225
+## Objeto con datos ingresados por el usuario  25/02/25
 
-Genere un programa que pida al usuario que inserte los datos de un alumno tales como Nombre completo, Boleta y grupo, estos deberán ser almacenados en un objeto, puede ser utilizando _class_ ó _struct_ , después mostrar los datos del alumno en pantalla.
+Instrucciones:
+Genere un programa que pida al usuario que inserte los datos de un alumno tales como Nombre completo, Boleta y grupo, estos deberán ser almacenados en un objeto, puede ser utilizando class ó struct, después mostrar los datos del alumno en pantalla.
 
 ``` cpp
 // Baez Pacheco Jonathhan Leon      

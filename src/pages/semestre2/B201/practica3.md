@@ -1,8 +1,9 @@
 # Practica 3
 
-Lista de objetos simplemente enlazada
+## Lista simplemente enlazada
 
-El usuario no ingresa datos
+Instrucciones:
+Generar una lista simplemente enlazada de tres nodos, cuyos valores enteros estén definidos directamente en el código (no pedir entrada al usuario). Luego, mostrar el contenido de la lista en consola
 
 ``` cpp
 // Baez Pacheco Jonathan Leon   

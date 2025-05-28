@@ -1,6 +1,10 @@
 # Práctica 5
 
-Lista simplemente enlazada: agregar al inicio, al final, mostrar y buscar nodos
+## Lista simplemente enlazada | Agregar al inicio ó al final, Mostrar la lista, Buscar nodos, Salir
+
+Instrucciones:
+Desarrollar un programa que implemente una lista simplemente enlazada de alumnos, los campos del nodo deben ser: Boleta (entero), Nombre (cadena) y promedio (flotante con 1 decimal).
+El programa debe mostrar un menú interactivo con las siguientes opciones: Agregar nodo al inicio, Agregar nodo al final, Mostrar todos los nodos, Buscar nodo por boleta y Salir del programa.
 
 ``` cpp
 // Baez Pacheco Jonathan Leon
@@ -31,7 +35,7 @@ int main(void) {
   printf("\n |  1 Insertar nodo al inicio      |");
   printf("\n |  2 Insertar nodo al final       |");
   printf("\n |  3 Mostrar todos los nodos      |");
-  printf("\n |  4 Buscar valor por boleta      |");
+  printf("\n |  4 Buscar nodo por boleta       |");
   printf("\n |  5 Salir                        |");
   printf("\n ===================================");
   

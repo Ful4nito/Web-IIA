@@ -1,8 +1,9 @@
 # Practica 1
 
-Ordenamiento Burbuja de números generados aleatoriamente 180225
+## Ordenamiento Burbuja de números generados aleatoriamente 18/02/25
 
-Un programa que pide al usuario cuantos números aleatorios desea generar, estos estarán en el rango de 0 a 100, posteriormente serán ordenados con el método _burbuja_ aplicando solamente una iteración.
+Instrucciones:
+Un programa que pide al usuario cuantos números aleatorios desea generar, estos deben estar en el rango de 0 a 100, posteriormente se le aplicara solamente una iteracion de ordenamiento burnuja y se mostrara el resultado por pantalla.
 
 ``` cpp
 // Baez Pacheco Jonathan Leon

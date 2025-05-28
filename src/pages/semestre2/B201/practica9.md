@@ -1,5 +1,9 @@
 # Practica 9
 
+## Estructura Cola
+
+Instrucciones:
+
 ``` cpp
 // Baez Pacheco Jonathan Leon 
 

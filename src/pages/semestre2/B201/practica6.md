@@ -1,6 +1,8 @@
-# Práctica 6
+# Práctica 6 [Practica Libre]
 
-Lista enlazada
+## Lista simplemente enlazada | Menu con 10 opciones
+
+Descripción: 
 
 ``` cpp
 // Baez Pacheco Jonathan Leon

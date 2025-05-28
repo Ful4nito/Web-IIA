@@ -1,8 +1,11 @@
 # Práctica 4
 
-Lista simplemente enlazada: agregar al final y mostrar objetos 
+## Lista simplemente enlazada | Agregar nodo al final, Mostrar objetos, Salir
 
-Los datos de la estructura seran ingresados por el usuario
+Instrucciones:
+Desarrollar un programa que implemente una lista simplemente enlazada de números enteros.
+El programa debe mostrar un menú interactivo con las siguientes opciones: Agregar nodos, Mostrar la lista y Salir del programa.
+Cada nuevo nodo debe enlazarse al final de la lista existente, manteniendo el orden de inserción.
 
 ``` cpp
 // Baez Pacheco Jonathan Leon 
@@ -48,7 +51,6 @@ int main() {
         printf(" Inserte valor: ");
         scanf("%i", &aux->valor);
         aux->sig = NULL; 
-
         if (inicial == NULL) {
           inicial = aux;
           actual = aux;
@@ -56,15 +58,14 @@ int main() {
         }
         actual->sig = aux;
         actual = aux;
-
         break;
+
       case 2:
         aux = inicial;
         if (aux == NULL) {
           printf("\n La lista esta vacia.");
           break;
         }
-        
         i = 0;
         while (aux->sig != NULL) {
           printf("\n Nodo %-4i Valor %i", i+1, aux->valor);
@@ -72,11 +73,12 @@ int main() {
           i += 1;
         }
         printf("\n Nodo %-4i Valor %i\n", i+1, aux->valor);
-
         break;
+
       case 3:
         menu = 0;
         break;
+
       default:
         break;
     }

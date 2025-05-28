@@ -1,6 +1,8 @@
 # Practica 7
 
- Lista doblemente enlazada
+## Lista doblemente enlazada
+
+Instrucciones:
 
 ``` cpp
 // Jonathan Leon Baez Pacheco 
